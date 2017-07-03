@@ -1,0 +1,103 @@
+#video-player{
+	width: 640px;
+	margin: auto;
+}
+.carousel{
+	overflow: hidden;
+	margin: auto;
+}
+.carousel-inner {
+	float:left;
+	width:1260px;
+	overflow: hidden;
+	background: #F0F0F0;
+}
+.carousel-inner ul {
+	position:relative;
+	left:-210px; /*can not delete, useful attribute for jquery*/
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width:9999px;
+}
+.carousel-watched .carousel-inner ul {
+	margin-left: 210px;
+}
+.carousel-inner ul li{
+	float: left;
+	width:200px;
+	height:320px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.carousel-inner ul li img {
+	.margin-bottom:-4px; /* only for IE */
+	cursor:pointer;
+	cursor: hand;
+	width: 100%;
+}
+.left-click, .right-click{
+	float:left;
+	height:320px;
+	width:50px;
+	background-color: #C0C0C0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.left-click:hover, .right-click:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+.left-click, .right-click{
+  text-align: center;
+  line-height: 320px;
+}
+
+@media (min-width: 1440px){
+	.carousel, #video-player, #Video{
+		width: 1360px;
+	}
+	.carousel-inner {
+		width:1260px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1439px){
+	.carousel, #video-player, #Video{
+		width: 1150px;
+	}
+	.carousel-inner {
+		width:1050px;
+	}
+}
+@media (min-width: 960px) and (max-width: 1199px){
+	.carousel, #video-player, #Video{
+		width: 940px;
+	}
+	.carousel-inner {
+		width:840px;
+	}
+}
+@media (min-width: 768px) and (max-width: 959px){
+	.carousel, #video-player, #Video{
+		width: 730px;
+	}
+	.carousel-inner {
+		width:630px;
+	}
+}
+@media (min-width: 560px) and (max-width: 767px){
+	.carousel, #video-player, #Video{
+		width: 520px;
+	}
+	.carousel-inner {
+		width:420px;
+	}
+}
+@media (max-width: 559px){
+	.carousel, #video-player, #Video{
+		width: 310px;
+	}
+	.carousel-inner {
+		width:210px;
+	}
+}
